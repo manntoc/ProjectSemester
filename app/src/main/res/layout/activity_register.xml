@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/bgabuabu">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/hiasan"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/kembali"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hiasan"
+        android:text="Welcome RAGET!!"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="18dp"
+        android:id="@+id/R_txt1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_txt1"
+        android:text="ayo belanja yang banyak biar kami cepat kaya"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="14dp"
+        android:id="@+id/R_txt2"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/R_txt2"
+        android:padding="30dp"
+        android:id="@+id/ly_1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/tombol"
+            android:paddingLeft="14dp"
+            android:hint="Enter your Name"
+            android:textColor="@color/design"
+            android:backgroundTint="@color/white"
+            android:id="@+id/edt_name"
+            android:fontFamily="@font/poppinsregular"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/tombol"
+            android:paddingLeft="14dp"
+            android:hint="Enter your Email"
+            android:textColor="@color/design"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/edt_email"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/tombol"
+            android:paddingLeft="14dp"
+            android:hint="Create your Password"
+            android:textColor="@color/design"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/edt_password"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/tombol"
+            android:paddingLeft="14dp"
+            android:hint="Confirm your Password"
+            android:textColor="@color/design"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/edt_comfirm"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:width="270dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tombol"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:id="@+id/btnregister"
+        android:fontFamily="@font/poppinsbold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btnregister"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="12dp"
+            android:textColor="@color/raget"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
